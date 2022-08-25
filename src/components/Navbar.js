@@ -1,5 +1,6 @@
 import "./nav.css";
 import img from "./intel.webp";
+import CartWidget from "./CartWidget";
 
 const Navbar = () => {
   return (
@@ -11,6 +12,7 @@ const Navbar = () => {
         <li>lista</li>
         <li>contacto</li>
       </ul>
+      <CartWidget />
     </nav>
   );
 };

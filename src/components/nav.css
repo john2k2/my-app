@@ -44,3 +44,33 @@ img{
     justify-content: space-between;
     align-items: center;;
 }
+.card{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 0 1rem ;
+    margin-right: 1rem;
+}
+.card span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+}
+.card p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+}
+button{
+    background-color: #cfcbcb;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
