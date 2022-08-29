@@ -1,5 +1,5 @@
 import "./nav.css";
-import img from "./intel.webp";
+import img from "./aseets/img/intel.webp";
 import CartWidget from "./CartWidget";
 
 const Navbar = () => {

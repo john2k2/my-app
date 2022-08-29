@@ -6,9 +6,9 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import "./card.css";
 
-const card = ({ name, description, img }) => {
+const ItemListContainer = ({ name, description, img, precio }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 400 }}>
       <CardActionArea>
         <CardMedia component="img" image={img} alt="green iguana" />
         <CardContent>
@@ -16,14 +16,13 @@ const card = ({ name, description, img }) => {
             {name}
             <Typography variant="body2" color="text.secondary">
               {description}
+              {precio}
             </Typography>
           </Typography>
         </CardContent>
       </CardActionArea>
-      <button>Agregar Carrito</button>
-      <button>Quitar Carrito</button>
     </Card>
   );
 };
 
-export default card;
+export default ItemListContainer;
