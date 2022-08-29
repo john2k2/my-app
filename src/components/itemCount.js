@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./itemCount.css";
 
 const ItemCount = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
+  const [stock, setCount2] = useState(10);
 
   const handleIncrement = () => {
-    if (count < 10) {
+    if (count < stock) {
       setCount(count + 1);
     } else {
       alert("You can't have more than 10 items");
@@ -22,6 +23,7 @@ const ItemCount = () => {
   return (
     <div className="Count">
       <h1>Componentes Funcionales</h1>
+      <h2>Stock {stock} </h2>
       <p>{count}</p>
       <div className="Count-btn">
         <button onClick={handleDecrement}>-</button>
