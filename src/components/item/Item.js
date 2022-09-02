@@ -7,25 +7,33 @@ import { CardActionArea } from "@mui/material";
 import "./item.css";
 //components
 
-const Item = ({ data }) => {
-  console.log(data);
+const Item = ({ prod }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="card" sx={{ maxWidth: 445 }}>
       <CardActionArea>
-        <CardMedia 
-        component="img" 
-        height="140" 
-        alt="green iguana" />
+        <CardMedia
+          component="img"
+          height="140"
+          image={prod.image}
+          alt="green iguana"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            data.id{data.id}
+            {prod.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            lorem ipsum
+            {prod.description}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            ${prod.price}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {prod.rating.rate}
           </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
   );
 };
+
 export default Item;

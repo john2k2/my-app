@@ -10,3 +10,12 @@ h1{
     color: rgb(16, 14, 14);
     text-align: center;
 }
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10rem auto;
+    width: 80%;
+    height: auto;
+}

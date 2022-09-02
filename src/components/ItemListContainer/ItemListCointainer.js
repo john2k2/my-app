@@ -3,19 +3,17 @@ import ItemList from "../itemList/itemList";
 import { useEffect, useState } from "react";
 
 const ItemListContainer = () => {
-
-  const [productos, setProductos] = useState([]);
+  const [producto, setProductos] = useState([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((json) => setProductos(json));
   }, []);
 
   return (
-    <div>
-
-      <ItemList prod = {productos} />
+    <div className="container">
+      <ItemList prod={producto} />
     </div>
   );
 };
