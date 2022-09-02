@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./itemList.css";
-import Item from "./item/Item";
+import Item from "../item/Item";
 
-const ItemList = ({data}) => {
+function ItemList() {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -18,6 +18,6 @@ const ItemList = ({data}) => {
       ))}
     </div>
   );
-};
+}
 
 export default ItemList;

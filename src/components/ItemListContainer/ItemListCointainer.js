@@ -1,23 +1,15 @@
-import ItemList from "../itemList/itemList";
 import "./itemListContainer.css";
+import ItemCount from "../itemCount/itemCount";
 
-const ItemListContainer = ({ data }) => {
+const ItemListContainer = ({ greeting }) => {
+  const onAdd = (count) => {
+    alert(`Agregaste ${count} productos al carrito`);
+  };
+
   return (
-    <div className="itemListContainer">
-      {loading ? (
-        <h1>Cargando...</h1>
-      ) : (
-        <div>
-          <ItemList productos={data} />
-          <div className="itemListContainer">
-            <h1>Productos</h1>
-
-            <div className="lista_productos">
-              <ItemList Productos={data} />
-            </div>
-          </div>
-        </div>
-      )}
+    <div className="container">
+      <h1>{greeting}</h1>
+      <ItemCount stock = {10} initial = {1} onAdd = {onAdd} />
     </div>
   );
 };
