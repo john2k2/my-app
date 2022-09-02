@@ -1,6 +1,6 @@
 import React from "react";
 
-const CartWidget = ({ carrito }) => {
+const CartWidget = () => {
   let monto = 0;
   return (
     <div className="card">
@@ -10,4 +10,4 @@ const CartWidget = ({ carrito }) => {
   );
 };
 
-export default CartWidget;
+export default CartWidget ;
