@@ -21,15 +21,6 @@ const Item = ({ prod }) => {
           <Typography gutterBottom variant="h5" component="div">
             {prod.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {prod.description}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            ${prod.price}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {prod.rating.rate}
-          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

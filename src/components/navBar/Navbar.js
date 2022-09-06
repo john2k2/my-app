@@ -1,19 +1,21 @@
+import React from "react";
 import "./nav.css";
-import img from "./aseets/img/intel.webp";
-import CartWidget from "./CartWidget";
+import './nav.css';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="container">
-      <img src={img} alt="intel" />
-      <ul>
-        <li>menu</li>
-        <li>componentes</li>
-        <li>lista</li>
-        <li>contacto</li>
-      </ul>
-      <CartWidget />
-    </nav>
+    <ul>
+      <Link to="/" className="link">
+        Home
+      </Link>
+      <Link to="/" className="link">
+        About
+      </Link>
+      <Link to="/" className="link">
+        Contact
+      </Link>
+    </ul>
   );
 };
 
